@@ -1,26 +1,329 @@
 @import "tailwindcss";
 
 :root {
+  --color-blue: #0b143f;
+  --color-yellow: #ffe11e;
+  --color-white: #ffffff;
+  --color-black: #000000;
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0b143f;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-neo-blue: #0b143f;
+  --color-neo-yellow: #ffe11e;
+  --font-sans: var(--font-montserrat);
+  --font-serif: var(--font-montserrat);
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Animations --- */
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.reveal-text {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  padding-bottom: 8px;
+  margin-bottom: -8px;
+}
+
+.reveal-text span {
+  display: inline-block;
+  animation: slideUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  filter: blur(5px);
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.delay-100 {
+  transition-delay: 100ms;
+  animation-delay: 100ms;
+}
+.delay-200 {
+  transition-delay: 200ms;
+  animation-delay: 200ms;
+}
+.delay-300 {
+  transition-delay: 300ms;
+  animation-delay: 300ms;
+}
+
+/* --- Spotlight & Glow Effects --- */
+.spotlight-group {
+  position: relative;
+}
+
+.spotlight-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(11, 20, 63, 0.08);
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.spotlight-card-dark {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+@media (hover: hover) {
+  .spotlight-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      600px circle at var(--mouse-x) var(--mouse-y),
+      rgba(255, 225, 30, 0.15),
+      transparent 40%
+    );
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .spotlight-group:hover .spotlight-card::after {
+    opacity: 1;
+  }
+
+  .spotlight-card-dark::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      600px circle at var(--mouse-x) var(--mouse-y),
+      rgba(255, 225, 30, 0.05),
+      transparent 40%
+    );
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .spotlight-group:hover .spotlight-card-dark::after {
+    opacity: 1;
+  }
+}
+
+/* --- Border Beam Button --- */
+@keyframes border-beam {
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+.btn-beam {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-beam::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(90deg, transparent, #ffe11e, transparent);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: border-rotate 4s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn-beam:hover::before {
+  opacity: 1;
+}
+
+/* --- Parallax Background --- */
+#parallax-bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(rgba(11, 20, 63, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 1;
+  z-index: -1;
+  pointer-events: none;
+  will-change: transform;
+}
+
+/* --- Scroll Text Scrubbing --- */
+.scroll-scrub-text {
+  background-image: linear-gradient(to right, #0b143f 50%, #e4e4e7 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: background-position 0.1s linear;
+}
+
+/* --- Sonar Animation --- */
+@keyframes sonar {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.sonar-emitter {
+  position: relative;
+}
+
+.sonar-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  background-color: rgba(255, 225, 30, 0.4);
+  z-index: -1;
+  animation: sonar 2s infinite ease-out;
+}
+
+/* --- Connecting Noodles --- */
+.noodle-path {
+  stroke-dasharray: 10;
+  animation: dash 30s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+
+/* Carousel */
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.carousel-slide img {
+  transform: scale(1.1);
+  transition: transform 10s ease-out;
+}
+
+.carousel-slide.active img {
+  transform: scale(1);
+}
+
+/* Pattern Grid */
+.pattern-grid {
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle, #0b143f 1px, transparent 1px);
+  opacity: 0.03;
+}
+
+.pattern-grid-dark {
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle, #ffffff 1px, transparent 1px);
+  opacity: 0.05;
+}
+
+/* Selection */
+::selection {
+  background: #ffe11e;
+  color: #0b143f;
+}
+
+/* Custom Input */
+.custom-input {
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s;
+}
+
+.custom-input:focus {
+  border-bottom-color: #ffe11e;
+  outline: none;
+}
+
+/* --- Marquee Animation --- */
+@keyframes marquee-ltr {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-ltr {
+  animation: marquee-ltr 40s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+/* --- Utilities --- */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
