@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 
+// Font Configuration: Montserrat is used as the primary font for the project.
+
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],

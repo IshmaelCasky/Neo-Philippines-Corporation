@@ -9,7 +9,7 @@
   --foreground: #0b143f;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-neo-blue: #0b143f;
