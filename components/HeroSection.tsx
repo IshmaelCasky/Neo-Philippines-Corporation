@@ -57,11 +57,11 @@ export default function HeroSection() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row flex-wrap gap-4 reveal-on-scroll delay-300">
             <Link
-              href="#vision"
+              href="/about/company"
               className="group relative px-8 py-4 bg-[#0B143F] text-white rounded-lg overflow-hidden transition-transform active:scale-95 btn-beam shadow-xl shadow-blue-900/20 w-full sm:w-auto text-center inline-flex justify-center items-center"
             >
               <span className="relative z-10 flex items-center justify-center gap-2 text-xs uppercase tracking-widest font-semibold">
-                Explore Our Vision
+                Discover Who We Are
                 <iconify-icon icon="lucide:arrow-right" className="text-lg" />
               </span>
               <div className="absolute inset-0 bg-[#FFE11E] translate-y-[100%] group-hover:translate-y-0 transition-transform duration-300 z-0 mix-blend-multiply"></div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 // Font Configuration: Montserrat is used as the primary font for the project.
 
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} font-sans antialiased min-h-screen`}
       >
+        <Header />
         {children}
       </body>
     </html>

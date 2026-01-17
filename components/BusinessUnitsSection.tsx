@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const BUSINESS_UNITS = [
   {
-    name: "Neo Foods",
+    name: "Foods",
     category: "Core Division",
     description: "Is the food manufacturing leg of NEO Philippines Corporation, focused on producing safe, high-quality, and market-driven food products. The business emphasizes quality assurance, operational efficiency, and compliance with food safety standards while supporting local suppliers and sustainable economic growth in Mindanao.",
     image: "https://images.unsplash.com/photo-1598514983318-2f64f8f4796c?q=80&w=2670&auto=format&fit=crop",
@@ -13,7 +13,7 @@ const BUSINESS_UNITS = [
     theme: "yellow"
   },
   {
-    name: "Neo Customs Brokerage Solutions",
+    name: "Customs Brokerage Solutions",
     category: "Logistics & Trade",
     description: "Provides reliable and compliant customs brokerage and trade facilitation services. Guided by regulatory expertise and a client-focused approach, the business enables efficient import and export operations while minimizing risks, delays, and logistics costs.",
     image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2670&auto=format&fit=crop",
@@ -21,7 +21,7 @@ const BUSINESS_UNITS = [
     theme: "white"
   },
   {
-    name: "Neo General Merchandise",
+    name: "General Merchandise",
     category: "Retail & Trade",
     description: "Handles the sourcing and distribution of a wide range of products for retail and institutional markets. The business prioritizes quality, efficient procurement, and dependable supply chain management to deliver consistent value and support diversified commercial growth.",
     image: "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=2670&auto=format&fit=crop",
@@ -67,7 +67,7 @@ export default function BusinessUnitsSection() {
           <div className="flex items-center gap-2 mb-4">
             <span className="w-8 h-[1px] bg-[#0B143F]/30"></span>
             <span className="text-xs font-bold tracking-widest text-[#0B143F]/60 uppercase">
-              03 / Business Units
+              Business Units
             </span>
           </div>
           <h3 className="text-4xl md:text-6xl font-serif text-[#0B143F] leading-tight">

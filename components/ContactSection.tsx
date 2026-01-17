@@ -11,7 +11,7 @@ export default function ContactSection() {
         {/* Left Content */}
         <div className="reveal-on-scroll">
           <span className="text-[10px] font-mono text-[#FFE11E] block mb-4">
-            05 / JOIN OUR TEAM
+            JOIN OUR TEAM
           </span>
           <h3 className="text-3xl md:text-5xl lg:text-6xl font-serif text-white mb-6">
             Help Us Shape the Future.

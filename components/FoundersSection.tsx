@@ -64,7 +64,7 @@ export default function FoundersSection() {
   }, []);
 
   return (
-    <section className="py-24 px-4 md:py-32 md:px-12 bg-[#0B143F] relative overflow-hidden">
+    <section id="management" className="py-24 px-4 md:py-32 md:px-12 bg-[#0B143F] relative overflow-hidden">
       {/* Dynamic Background Elements */}
       <div className="absolute inset-0 pattern-grid-dark pointer-events-none opacity-10"></div>
       
@@ -95,7 +95,7 @@ export default function FoundersSection() {
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-6">
           <span className="w-1.5 h-1.5 rounded-full bg-[#FFE11E] animate-pulse"></span>
           <span className="text-[10px] font-mono text-zinc-300 tracking-widest uppercase">
-            04 / Leadership
+             Leadership
           </span>
         </div>
         

@@ -53,7 +53,7 @@ export default function VisionSection() {
       {/* Section Label */}
       <div className="absolute top-8 left-6 md:top-12 md:left-12 relative z-10">
         <span className="text-[10px] font-mono text-zinc-400">
-          01 / VISION &amp; MISSION
+           VISION &amp; MISSION
         </span>
       </div>
 

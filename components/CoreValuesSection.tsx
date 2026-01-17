@@ -53,7 +53,7 @@ export default function CoreValuesSection() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 reveal-on-scroll">
           <div>
             <span className="text-[10px] font-mono text-zinc-400 block mb-4">
-              02 / CORE VALUES
+              CORE VALUES
             </span>
             <h3 className="text-3xl md:text-5xl font-serif text-[#0B143F] mb-4">
               The Cornerstone of Success
