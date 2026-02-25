@@ -13,41 +13,7 @@ export default function Footer() {
       <div className="absolute inset-0 pattern-grid-dark pointer-events-none"></div>
 
       {/* Marquee Banner */}
-      <div className="w-full bg-[#FFE11E] py-3 overflow-hidden mb-16 relative z-20">
-        <div className="animate-marquee-ltr flex items-center gap-8 md:gap-16 whitespace-nowrap">
-          <span className="text-[#0B143F] font-bold uppercase tracking-widest text-xs md:text-sm flex items-center gap-4">
-            NEO PHILIPPINES
-            <iconify-icon icon="lucide:star" />
-          </span>
-          <span className="text-[#0B143F] font-bold uppercase tracking-widest text-xs md:text-sm flex items-center gap-4">
-            SUSTAINABLE GROWTH
-            <iconify-icon icon="lucide:star" />
-          </span>
-          <span className="text-[#0B143F] font-bold uppercase tracking-widest text-xs md:text-sm flex items-center gap-4">
-            MINDANAO&apos;S PREMIER
-            <iconify-icon icon="lucide:star" />
-          </span>
-          <span className="text-[#0B143F] font-bold uppercase tracking-widest text-xs md:text-sm flex items-center gap-4">
-            QUALITY &amp; INTEGRITY
-            <iconify-icon icon="lucide:star" />
-          </span>
-          <span className="text-[#0B143F] font-bold uppercase tracking-widest text-xs md:text-sm flex items-center gap-4">
-            NEO PHILIPPINES
-            <iconify-icon icon="lucide:star" />
-          </span>
-          <span className="text-[#0B143F] font-bold uppercase tracking-widest text-xs md:text-sm flex items-center gap-4">
-            SUSTAINABLE GROWTH
-            <iconify-icon icon="lucide:star" />
-          </span>
-          <span className="text-[#0B143F] font-bold uppercase tracking-widest text-xs md:text-sm flex items-center gap-4">
-            MINDANAO&apos;S PREMIER
-            <iconify-icon icon="lucide:star" />
-          </span>
-          <span className="text-[#0B143F] font-bold uppercase tracking-widest text-xs md:text-sm flex items-center gap-4">
-            QUALITY &amp; INTEGRITY
-            <iconify-icon icon="lucide:star" />
-          </span>
-        </div>
+      <div className="w-full py-3 overflow-hidden mb-16 relative z-20">
       </div>
 
       <div className="px-6 md:px-12 relative z-10">
@@ -56,29 +22,30 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-5">
             <Link
               href="#"
-              className="inline-flex items-center gap-3 bg-white px-5 py-4 rounded-xl mb-8 shadow-lg shadow-blue-900/20 hover:scale-105 transition-transform duration-300"
+              className="inline-flex items-center gap-4 bg-white px-5 py-2.5 rounded-2xl mb-8 shadow-lg shadow-blue-900/20 hover:scale-105 transition-transform duration-300"
             >
               <Image
                 src="/logo.png"
                 alt="Neo Philippines Corporation"
-                width={32}
-                height={32}
-                className="h-8 w-auto"
+                width={120}
+                height={120}
+                className="h-20 w-auto md:h-24"
               />
-              <div className="flex flex-col justify-center border-l border-[#0B143F]/20 pl-4 h-8">
-                <span className="block text-[10px] uppercase tracking-widest text-[#0B143F] font-bold leading-none">
+              <div className="flex flex-col justify-center border-l border-[#0B143F]/20 pl-4 h-20 md:h-24">
+                <span className="block text-base md:text-lg uppercase tracking-widest text-[#0B143F] font-bold leading-none mb-1">
+                  Neo
+                </span>
+                <span className="block text-base md:text-lg uppercase tracking-widest text-[#0B143F] font-bold leading-none">
                   Philippines
                 </span>
-                <span className="block text-[8px] uppercase tracking-widest text-zinc-400 font-sans leading-none mt-1">
+                <span className="block text-[11px] md:text-xs uppercase tracking-widest text-zinc-400 font-sans leading-none mt-1">
                   Corporation
                 </span>
               </div>
             </Link>
 
             <p className="text-zinc-400 text-sm leading-relaxed max-w-sm">
-              Delivering quality services in food manufacturing and general
-              merchandise. Committed to Mindanao&apos;s sustainable growth through
-              innovation and integrity.
+              Delivering quality services in food manufacturing, custom solutions, and general merchandise. Committed to Mindanao&apos;s sustainable growth through innovation and integrity.
             </p>
           </div>
 
@@ -90,7 +57,7 @@ export default function Footer() {
             <ul className="space-y-4 text-xs text-zinc-400 font-medium">
               <li>
                 <Link
-                  href="#"
+                  href="/"
                   className="hover:text-white hover:translate-x-1 transition-all inline-block"
                 >
                   Home
@@ -98,15 +65,31 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#vision"
+                  href="/about"
                   className="hover:text-white hover:translate-x-1 transition-all inline-block"
                 >
-                  Vision &amp; Mission
+                  About Us
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#contact"
+                  href="/products"
+                  className="hover:text-white hover:translate-x-1 transition-all inline-block"
+                >
+                  Products & Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/careers"
+                  className="hover:text-white hover:translate-x-1 transition-all inline-block"
+                >
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
                   className="hover:text-white hover:translate-x-1 transition-all inline-block"
                 >
                   Contact Us
@@ -169,16 +152,8 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-white/30 font-mono uppercase tracking-widest">
-          <span>© 2035 Neo Philippines Corporation.</span>
-          <div className="flex gap-6">
-            <Link href="#" className="hover:text-white transition-colors">
-              Privacy
-            </Link>
-            <Link href="#" className="hover:text-white transition-colors">
-              Terms
-            </Link>
-          </div>
+        <div className="mt-16 pt-8 border-t border-white/5 flex flex-col justify-center items-center gap-4 text-[10px] text-white/30 font-mono uppercase tracking-widest text-center">
+          <span>© Neo Philippines Corporation. All rights reserved.</span>
         </div>
       </div>
     </footer>

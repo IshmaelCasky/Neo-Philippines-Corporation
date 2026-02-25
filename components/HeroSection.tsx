@@ -35,23 +35,23 @@ export default function HeroSection() {
           {/* Headline */}
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-light text-[#0B143F] leading-[1] tracking-tight mb-6 md:mb-8">
             <span className="reveal-text">
-              <span>Driving</span>
+              <span>Neo </span>
             </span>
             
-            <span className="reveal-text pr-4">
+            <span className="reveal-text ml-5 pr-4">
               <span className="delay-100 w-[100%] font-serif italic text-[#0B143F]">
-                Sustainable
+                Philippines
               </span>
             </span>
            
             <span className="reveal-text">
-              <span className="delay-200">Growth.</span>
+              <span className="delay-200">Corporation</span>
             </span>
           </h1>
 
           {/* Description */}
           <p className="text-zinc-500 text-base md:text-xl max-w-md mb-8 md:mb-12 leading-relaxed reveal-on-scroll delay-300">
-            a diversified company based in Davao, Philippines, with business interests in Customs Brokerage, Food Manufacturing, and General Merchandise. 
+            A diversified company based in Davao, Philippines, with business interests in in food manufacturing, custom solutions, and general merchandise. 
           </p>
 
           {/* CTAs */}
@@ -61,7 +61,7 @@ export default function HeroSection() {
               className="group relative px-8 py-4 bg-[#0B143F] text-white rounded-lg overflow-hidden transition-transform active:scale-95 btn-beam shadow-xl shadow-blue-900/20 w-full sm:w-auto text-center inline-flex justify-center items-center"
             >
               <span className="relative z-10 flex items-center justify-center gap-2 text-xs uppercase tracking-widest font-semibold">
-                Discover Who We Are
+                About us
                 <iconify-icon icon="lucide:arrow-right" className="text-lg" />
               </span>
               <div className="absolute inset-0 bg-[#FFE11E] translate-y-[100%] group-hover:translate-y-0 transition-transform duration-300 z-0 mix-blend-multiply"></div>
@@ -71,30 +71,10 @@ export default function HeroSection() {
               href="#contact"
               className="px-8 py-4 bg-transparent border border-[#0B143F]/20 text-[#0B143F] rounded-lg hover:bg-zinc-50 transition-colors text-xs uppercase tracking-widest font-semibold w-full sm:w-auto text-center inline-flex justify-center items-center"
             >
-              Partner With Us
+              Be Part Of Us
             </Link>
           </div>
-        </div>
-
-        {/* Bottom Stats */}
-        <div className="absolute bottom-8 left-6 md:left-16 flex gap-8 md:gap-12 opacity-60">
-          <div>
-            <span className="block text-xl md:text-2xl font-serif text-[#0B143F]">
-              2035
-            </span>
-            <span className="text-[9px] uppercase tracking-widest text-zinc-500">
-              Vision Goal
-            </span>
-          </div>
-          <div>
-            <span className="block text-xl md:text-2xl font-serif text-[#0B143F]">
-              100%
-            </span>
-            <span className="text-[9px] uppercase tracking-widest text-zinc-500">
-              Commitment
-            </span>
-          </div>
-        </div>
+        </div>        
       </div>
 
       {/* Right Image Section */}

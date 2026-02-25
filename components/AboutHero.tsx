@@ -32,7 +32,7 @@ export default function AboutHero() {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-7xl mx-auto">
         <span className="inline-block px-4 py-1.5 rounded-full border border-[#FFE11E]/30 bg-[#FFE11E]/10 backdrop-blur-sm text-[#FFE11E] text-xs font-bold tracking-[0.3em] uppercase mb-8 shadow-lg shadow-[#FFE11E]/5 animate-fade-in-up">
-            Learn More About Us
+            About Us
         </span>
         <h1 
             ref={titleRef}

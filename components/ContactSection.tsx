@@ -10,11 +10,9 @@ export default function ContactSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 relative z-10">
         {/* Left Content */}
         <div className="reveal-on-scroll">
-          <span className="text-[10px] font-mono text-[#FFE11E] block mb-4">
-            JOIN OUR TEAM
-          </span>
+         
           <h3 className="text-3xl md:text-5xl lg:text-6xl font-serif text-white mb-6">
-            Help Us Shape the Future.
+            BE PART OF US.
           </h3>
           <p className="text-white/60 text-base md:text-lg leading-relaxed mb-10 max-w-md">
             Ready to make an impact? We're looking for passionate individuals to join our growing team.
@@ -28,12 +26,12 @@ export default function ContactSection() {
               </div>
               <div>
                 <h5 className="text-sm font-bold text-white mb-1">
-                  Headquarters
+                  Location
                 </h5>
                 <p className="text-sm text-white/50">
-                  123 Industrial Ave, Davao City
+                  Purok 3A, Apokon, Tagum City, 8100
                   <br />
-                  Mindanao, Philippines 8000
+                Davao del Norte, Region XI, Philippines
                 </p>
               </div>
             </div>
@@ -42,9 +40,9 @@ export default function ContactSection() {
                 <iconify-icon icon="lucide:mail" />
               </div>
               <div>
-                <h5 className="text-sm font-bold text-white mb-1">Start Your Journey</h5>
+                <h5 className="text-sm font-bold text-white mb-1">Email Us</h5>
                 <p className="text-sm text-white/50">
-                  careers@neophilippines.com
+                  NeoPhilippinesCorporation@gmail.com
                 </p>
               </div>
             </div>

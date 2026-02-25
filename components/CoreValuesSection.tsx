@@ -50,183 +50,176 @@ export default function CoreValuesSection() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 reveal-on-scroll">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 reveal-on-scroll">
           <div>
-            <span className="text-[10px] font-mono text-zinc-400 block mb-4">
-              CORE VALUES
+            <span className="text-xs font-mono text-zinc-400 block mb-2 uppercase tracking-widest">
+              Core Values
             </span>
-            <h3 className="text-3xl md:text-5xl font-serif text-[#0B143F] mb-4">
+            <h3 className="text-3xl md:text-4xl font-serif text-[#0B143F]">
               The Cornerstone of Success
             </h3>
-            <p className="text-sm text-zinc-500 leading-relaxed max-w-md">
-              These principles are the bedrock of our culture, guiding every
-              decision we make to ensure sustainable impact.
-            </p>
           </div>
-          <div className="h-px flex-1 bg-[#0B143F]/10 ml-8 hidden md:block self-center"></div>
+          <p className="text-xs md:text-sm text-zinc-500 leading-relaxed max-w-sm mt-4 md:mt-0">
+            These principles are the bedrock of our culture, guiding every
+            decision we make to ensure sustainable impact.
+          </p>
         </div>
 
-        {/* Values Grid */}
-        <div
-          ref={groupRef}
-          className="spotlight-group grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 auto-rows-[minmax(180px,auto)]"
-        >
-          {/* 1. God-centeredness (Featured - 2x2) */}
-          <div
-            className="spotlight-card col-span-1 md:col-span-2 row-span-auto md:row-span-2 bg-white p-6 md:p-10 rounded-2xl flex flex-col justify-between group hover:shadow-2xl hover:shadow-blue-900/5 transition-all duration-500 reveal-on-scroll"
-            style={{ "--mouse-x": "0px", "--mouse-y": "0px" } as React.CSSProperties}
-          >
-            <div className="flex justify-between items-start">
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-blue-50 rounded-xl flex items-center justify-center text-[#0B143F] group-hover:scale-110 transition-transform duration-500">
-                <iconify-icon
-                  icon="lucide:heart-handshake"
-                  className="text-2xl md:text-3xl"
-                />
+        {/* Horizontal Tree Layout (Desktop Focus) */}
+        <div className="hidden md:block relative mt-32 mb-16 w-full max-w-5xl mx-auto h-[260px]">
+          {/* Main Horizontal Trunk */}
+          <div className="absolute top-1/2 left-0 w-full h-[2px] bg-gradient-to-r from-[#0B143F]/0 via-[#0B143F]/20 to-[#0B143F]/0 -translate-y-1/2"></div>
+          
+          <div className="flex items-center justify-between relative z-10 w-full h-full px-6">
+            
+            {/* 1. God-centeredness (Top Branch) */}
+            <div className="relative group w-12 flex flex-col items-center justify-center">
+               <div className="absolute bottom-1/2 left-1/2 w-[2px] h-12 bg-[#0B143F]/20 -translate-x-1/2"></div>
+               <div className="w-12 h-12 bg-white border-2 border-[#0B143F]/10 text-[#0B143F] rounded-full flex justify-center items-center group-hover:bg-[#0B143F] group-hover:text-white transition-all shadow-md z-10 relative">
+                 <iconify-icon icon="lucide:heart-handshake" className="text-xl" />
+               </div>
+               <h4 className="text-sm font-bold text-[#0B143F] leading-snug absolute bottom-[calc(50%+3.5rem)] text-center w-36 -ml-12">
+                 God-centeredness
+               </h4>
+            </div>
+
+            {/* 2. Trustworthiness (Bottom Branch) */}
+            <div className="relative group w-12 flex flex-col items-center justify-center">
+               <div className="absolute top-1/2 left-1/2 w-[2px] h-12 bg-[#0B143F]/20 -translate-x-1/2"></div>
+               <div className="w-12 h-12 bg-white border-2 border-[#0B143F]/10 text-[#0B143F] rounded-full flex justify-center items-center group-hover:bg-[#0B143F] group-hover:text-white transition-all shadow-md z-10 relative">
+                 <iconify-icon icon="lucide:shield" className="text-xl" />
+               </div>
+               <h4 className="text-sm font-bold text-[#0B143F] leading-snug absolute top-[calc(50%+3.5rem)] text-center w-32 -ml-10">
+                 Trustworthiness
+               </h4>
+            </div>
+
+            {/* 3. Integrity (Top Branch) */}
+            <div className="relative group w-12 flex flex-col items-center justify-center">
+               <div className="absolute bottom-1/2 left-1/2 w-[2px] h-12 bg-[#0B143F]/20 -translate-x-1/2"></div>
+               <div className="w-12 h-12 bg-white border-2 border-[#0B143F]/10 text-[#0B143F] rounded-full flex justify-center items-center group-hover:bg-[#0B143F] group-hover:text-white transition-all shadow-md z-10 relative">
+                 <iconify-icon icon="lucide:shield-check" className="text-xl" />
+               </div>
+               <h4 className="text-sm font-bold text-[#0B143F] leading-snug absolute bottom-[calc(50%+3.5rem)] text-center w-32 -ml-10">
+                 Integrity
+               </h4>
+            </div>
+
+            {/* 4. Excellence (Bottom Branch) */}
+            <div className="relative group w-12 flex flex-col items-center justify-center">
+               <div className="absolute top-1/2 left-1/2 w-[2px] h-12 bg-[#0B143F]/20 -translate-x-1/2"></div>
+               <div className="w-12 h-12 bg-white border-2 border-[#0B143F]/10 text-[#0B143F] rounded-full flex justify-center items-center group-hover:bg-[#0B143F] group-hover:text-white transition-all shadow-md z-10 relative">
+                 <iconify-icon icon="lucide:medal" className="text-xl" />
+               </div>
+               <h4 className="text-sm font-bold text-[#0B143F] leading-snug absolute top-[calc(50%+3.5rem)] text-center w-32 -ml-10">
+                 Excellence
+               </h4>
+            </div>
+
+            {/* 5. Responsibility (Top Branch) */}
+            <div className="relative group w-12 flex flex-col items-center justify-center">
+               <div className="absolute bottom-1/2 left-1/2 w-[2px] h-12 bg-[#0B143F]/20 -translate-x-1/2"></div>
+               <div className="w-12 h-12 bg-white border-2 border-[#0B143F]/10 text-[#0B143F] rounded-full flex justify-center items-center group-hover:bg-[#0B143F] group-hover:text-white transition-all shadow-md z-10 relative">
+                 <iconify-icon icon="lucide:users" className="text-xl" />
+               </div>
+               <h4 className="text-sm font-bold text-[#0B143F] leading-snug absolute bottom-[calc(50%+3.5rem)] text-center w-32 -ml-10">
+                 Responsibility
+               </h4>
+            </div>
+
+            {/* 6. Passionate (Bottom Branch) */}
+            <div className="relative group w-12 flex flex-col items-center justify-center">
+               <div className="absolute top-1/2 left-1/2 w-[2px] h-12 bg-[#0B143F]/20 -translate-x-1/2"></div>
+               <div className="w-12 h-12 bg-white border-2 border-[#0B143F]/10 text-[#0B143F] rounded-full flex justify-center items-center group-hover:bg-[#0B143F] group-hover:text-white transition-all shadow-md z-10 relative">
+                 <iconify-icon icon="lucide:zap" className="text-xl" />
+               </div>
+               <h4 className="text-sm font-bold text-[#0B143F] leading-snug absolute top-[calc(50%+3.5rem)] text-center w-32 -ml-10">
+                 Passionate
+               </h4>
+            </div>
+
+            {/* 7. Discipline (Top Branch) */}
+            <div className="relative group w-12 flex flex-col items-center justify-center">
+               <div className="absolute bottom-1/2 left-1/2 w-[2px] h-12 bg-[#0B143F]/20 -translate-x-1/2"></div>
+               <div className="w-12 h-12 bg-white border-2 border-[#0B143F]/10 text-[#0B143F] rounded-full flex justify-center items-center group-hover:bg-[#0B143F] group-hover:text-white transition-all shadow-md z-10 relative">
+                 <iconify-icon icon="lucide:scale" className="text-xl" />
+               </div>
+               <h4 className="text-sm font-bold text-[#0B143F] leading-snug absolute bottom-[calc(50%+3.5rem)] text-center w-32 -ml-10">
+                 Discipline
+               </h4>
+            </div>
+
+          </div>
+        </div>
+
+        {/* Tree Layout (Mobile Fallback) */}
+        <div className="md:hidden relative mt-16 w-full max-w-sm mx-auto pb-8 pl-8">
+          <div className="absolute top-0 bottom-0 left-4 w-[2px] bg-gradient-to-b from-[#0B143F]/0 via-[#0B143F]/20 to-[#0B143F]/0 rounded-full"></div>
+          <div className="flex flex-col gap-8 relative z-10 w-full">
+            
+            {/* 1 */}
+            <div className="flex items-center gap-6 w-full relative group">
+              <div className="absolute top-1/2 left-[-2rem] w-8 h-[2px] bg-[#0B143F]/20 -translate-y-1/2"></div>
+              <div className="w-10 h-10 bg-white border-2 border-[#0B143F]/10 text-[#0B143F] rounded-full flex justify-center items-center group-hover:bg-[#0B143F] group-hover:text-white transition-all shadow-md z-10 shrink-0">
+                 <iconify-icon icon="lucide:heart-handshake" className="text-lg" />
               </div>
-              <span className="text-[10px] font-bold text-zinc-300 font-mono">
-                01
-              </span>
+              <h4 className="text-sm font-bold text-[#0B143F] leading-snug">God-centeredness</h4>
             </div>
-            <div className="mt-8">
-              <h4 className="text-2xl md:text-3xl font-serif text-[#0B143F] mb-4 group-hover:text-[#0B143F] transition-colors">
-                God-centeredness
-              </h4>
-              <p className="text-sm md:text-base text-zinc-500 leading-relaxed max-w-lg group-hover:text-zinc-700 transition-colors">
-                Our foundation is built on faith. We place spiritual values at
-                the center of our operations, ensuring that our growth honors
-                our Creator and serves our community with humility and grace.
-              </p>
-            </div>
-          </div>
 
-          {/* 2. Trustworthiness (1x1) */}
-          <div className="spotlight-card bg-white p-6 md:p-8 rounded-2xl flex flex-col gap-4 group hover:-translate-y-1 transition-transform duration-300 reveal-on-scroll delay-100">
-            <div className="flex justify-between items-start">
-              <iconify-icon
-                icon="lucide:shield"
-                className="text-2xl md:text-3xl text-[#0B143F] group-hover:text-[#FFE11E] transition-colors"
-              />
-              <span className="text-[10px] font-bold text-zinc-300 font-mono">
-                02
-              </span>
-            </div>
-            <div>
-              <h4 className="text-lg md:text-xl font-bold text-[#0B143F] mb-2">
-                Trustworthiness
-              </h4>
-              <p className="text-xs text-zinc-500 leading-relaxed">
-                We are reliable and dependable. Our stakeholders can count on us to deliver on our promises, every time.
-              </p>
-            </div>
-          </div>
-
-          {/* 3. Integrity (1x1) */}
-          <div className="spotlight-card bg-white p-6 md:p-8 rounded-2xl flex flex-col gap-4 group hover:-translate-y-1 transition-transform duration-300 reveal-on-scroll delay-200">
-            <div className="flex justify-between items-start">
-              <iconify-icon
-                icon="lucide:shield-check"
-                className="text-2xl md:text-3xl text-[#0B143F] group-hover:text-[#FFE11E] transition-colors"
-              />
-              <span className="text-[10px] font-bold text-zinc-300 font-mono">
-                03
-              </span>
-            </div>
-            <div>
-              <h4 className="text-lg md:text-xl font-bold text-[#0B143F] mb-2">
-                Integrity
-              </h4>
-              <p className="text-xs text-zinc-500 leading-relaxed">
-                Building relationships on transparency. We do what is right, even when no one is watching.
-              </p>
-            </div>
-          </div>
-
-          {/* 4. Excellence (1x1) */}
-          <div className="spotlight-card bg-white p-6 md:p-8 rounded-2xl flex flex-col gap-4 group hover:-translate-y-1 transition-transform duration-300 reveal-on-scroll delay-300">
-            <div className="flex justify-between items-start">
-              <iconify-icon
-                icon="lucide:medal"
-                className="text-2xl md:text-3xl text-[#0B143F] group-hover:text-[#FFE11E] transition-colors"
-              />
-              <span className="text-[10px] font-bold text-zinc-300 font-mono">
-                04
-              </span>
-            </div>
-            <div>
-              <h4 className="text-lg md:text-xl font-bold text-[#0B143F] mb-2">
-                Excellence
-              </h4>
-              <p className="text-xs text-zinc-500 leading-relaxed">
-                We refuse to settle for mediocrity. Every product and service aims for the highest standard.
-              </p>
-            </div>
-          </div>
-
-          {/* 5. Responsibility (2x1) */}
-          <div className="spotlight-card col-span-1 md:col-span-2 bg-white p-6 md:p-8 rounded-2xl flex flex-col md:flex-row items-center gap-6 group hover:-translate-y-1 transition-transform duration-300 reveal-on-scroll delay-100">
-            <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-[#0B143F] group-hover:scale-110 transition-transform duration-500 shrink-0">
-              <iconify-icon
-                icon="lucide:users"
-                className="text-2xl md:text-3xl"
-              />
-            </div>
-            <div className="flex-1 text-center md:text-left">
-              <div className="flex items-center justify-center md:justify-between mb-2">
-                <h4 className="text-lg md:text-xl font-bold text-[#0B143F]">
-                  Responsibility
-                </h4>
-                <span className="text-[10px] font-bold text-zinc-300 font-mono hidden md:block">
-                  05
-                </span>
+            {/* 2 */}
+            <div className="flex items-center gap-6 w-full relative group">
+              <div className="absolute top-1/2 left-[-2rem] w-8 h-[2px] bg-[#0B143F]/20 -translate-y-1/2"></div>
+              <div className="w-10 h-10 bg-white border-2 border-[#0B143F]/10 text-[#0B143F] rounded-full flex justify-center items-center group-hover:bg-[#0B143F] group-hover:text-white transition-all shadow-md z-10 shrink-0">
+                 <iconify-icon icon="lucide:shield" className="text-lg" />
               </div>
-              <p className="text-xs text-zinc-500 leading-relaxed">
-                Accountable to our partners, community, and environment. We own our actions and their outcomes.
-              </p>
+              <h4 className="text-sm font-bold text-[#0B143F] leading-snug">Trustworthiness</h4>
             </div>
-          </div>
 
-          {/* 7. Passionate (2x1) [MOVED UP] */}
-          <div className="spotlight-card col-span-1 md:col-span-2 bg-white p-6 md:p-8 rounded-2xl flex flex-col md:flex-row items-center gap-6 group hover:-translate-y-1 transition-transform duration-300 reveal-on-scroll delay-200">
-            <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-[#0B143F] group-hover:scale-110 transition-transform duration-500 shrink-0">
-              <iconify-icon
-                icon="lucide:zap"
-                className="text-2xl md:text-3xl"
-              />
-            </div>
-            <div className="flex-1 text-center md:text-left">
-              <div className="flex items-center justify-center md:justify-between mb-2">
-                <h4 className="text-lg md:text-xl font-bold text-[#0B143F]">
-                  Passionate
-                </h4>
-                <span className="text-[10px] font-bold text-zinc-300 font-mono hidden md:block">
-                  06
-                </span>
+            {/* 3 */}
+            <div className="flex items-center gap-6 w-full relative group">
+              <div className="absolute top-1/2 left-[-2rem] w-8 h-[2px] bg-[#0B143F]/20 -translate-y-1/2"></div>
+              <div className="w-10 h-10 bg-white border-2 border-[#0B143F]/10 text-[#0B143F] rounded-full flex justify-center items-center group-hover:bg-[#0B143F] group-hover:text-white transition-all shadow-md z-10 shrink-0">
+                 <iconify-icon icon="lucide:shield-check" className="text-lg" />
               </div>
-              <p className="text-xs text-zinc-500 leading-relaxed">
-                Driven by enthusiasm and dedication. We pour our hearts into everything we do to create lasting impact.
-              </p>
+              <h4 className="text-sm font-bold text-[#0B143F] leading-snug">Integrity</h4>
             </div>
-          </div>
 
-          {/* 6. Discipline (1x1) [MOVED DOWN] */}
-          <div className="spotlight-card bg-white p-6 md:p-8 rounded-2xl flex flex-col gap-4 group hover:-translate-y-1 transition-transform duration-300 reveal-on-scroll delay-300">
-            <div className="flex justify-between items-start">
-              <iconify-icon
-                icon="lucide:scale"
-                className="text-2xl md:text-3xl text-[#0B143F] group-hover:text-[#FFE11E] transition-colors"
-              />
-              <span className="text-[10px] font-bold text-zinc-300 font-mono">
-                07
-              </span>
+            {/* 4 */}
+            <div className="flex items-center gap-6 w-full relative group">
+              <div className="absolute top-1/2 left-[-2rem] w-8 h-[2px] bg-[#0B143F]/20 -translate-y-1/2"></div>
+              <div className="w-10 h-10 bg-white border-2 border-[#0B143F]/10 text-[#0B143F] rounded-full flex justify-center items-center group-hover:bg-[#0B143F] group-hover:text-white transition-all shadow-md z-10 shrink-0">
+                 <iconify-icon icon="lucide:medal" className="text-lg" />
+              </div>
+              <h4 className="text-sm font-bold text-[#0B143F] leading-snug">Excellence</h4>
             </div>
-            <div>
-              <h4 className="text-lg md:text-xl font-bold text-[#0B143F] mb-2">
-                Discipline
-              </h4>
-              <p className="text-xs text-zinc-500 leading-relaxed">
-                Consistent adherence to standards. Efficiency is born from orderly conduct and focused effort.
-              </p>
+
+            {/* 5 */}
+            <div className="flex items-center gap-6 w-full relative group">
+              <div className="absolute top-1/2 left-[-2rem] w-8 h-[2px] bg-[#0B143F]/20 -translate-y-1/2"></div>
+              <div className="w-10 h-10 bg-white border-2 border-[#0B143F]/10 text-[#0B143F] rounded-full flex justify-center items-center group-hover:bg-[#0B143F] group-hover:text-white transition-all shadow-md z-10 shrink-0">
+                 <iconify-icon icon="lucide:users" className="text-lg" />
+              </div>
+              <h4 className="text-sm font-bold text-[#0B143F] leading-snug">Responsibility</h4>
             </div>
+
+            {/* 6 */}
+            <div className="flex items-center gap-6 w-full relative group">
+              <div className="absolute top-1/2 left-[-2rem] w-8 h-[2px] bg-[#0B143F]/20 -translate-y-1/2"></div>
+              <div className="w-10 h-10 bg-white border-2 border-[#0B143F]/10 text-[#0B143F] rounded-full flex justify-center items-center group-hover:bg-[#0B143F] group-hover:text-white transition-all shadow-md z-10 shrink-0">
+                 <iconify-icon icon="lucide:zap" className="text-lg" />
+              </div>
+              <h4 className="text-sm font-bold text-[#0B143F] leading-snug">Passionate</h4>
+            </div>
+
+            {/* 7 */}
+            <div className="flex items-center gap-6 w-full relative group">
+              <div className="absolute top-1/2 left-[-2rem] w-8 h-[2px] bg-[#0B143F]/20 -translate-y-1/2"></div>
+              <div className="w-10 h-10 bg-white border-2 border-[#0B143F]/10 text-[#0B143F] rounded-full flex justify-center items-center group-hover:bg-[#0B143F] group-hover:text-white transition-all shadow-md z-10 shrink-0">
+                 <iconify-icon icon="lucide:scale" className="text-lg" />
+              </div>
+              <h4 className="text-sm font-bold text-[#0B143F] leading-snug">Discipline</h4>
+            </div>
+
           </div>
         </div>
       </div>

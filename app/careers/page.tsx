@@ -68,11 +68,11 @@ export default function CareersPage() {
             </div>
 
             <div className="relative z-10 text-center max-w-4xl px-4">
-                 <span className="block text-[#FFE11E] font-bold tracking-[0.2em] uppercase mb-4 reveal-on-scroll">
+                 {/* <span className="block text-[#FFE11E] font-bold tracking-[0.2em] uppercase mb-4 reveal-on-scroll">
                     Join Our Team
-                </span>
+                </span> */}
                 <h1 className="text-5xl md:text-7xl font-serif text-white mb-6 reveal-on-scroll leading-tight">
-                    Build the Future With Us
+                    Be Part of Neo Philippines Corporation<br></br>Build the Future With Us
                 </h1>
                 <p className="text-zinc-200 text-lg md:text-xl font-light max-w-2xl mx-auto reveal-on-scroll delay-100">
                     Be part of a dynamic organization driven by excellence, innovation, and a commitment to sustainable growth.
@@ -80,28 +80,54 @@ export default function CareersPage() {
             </div>
         </section>
 
-        {/* VALUES SECTION */}
-        <section className="py-24 px-4 md:px-12 bg-white">
-             <div className="max-w-7xl mx-auto">
-                <div className="text-center mb-16">
-                     <h2 className="text-3xl md:text-4xl font-serif text-[#0B143F] mb-4">Why Join Neo?</h2>
-                     <p className="text-[#0B143F]/60 max-w-2xl mx-auto">
-                        We offer more than just a job. We offer a career where you can grow, make an impact, and be part of a supportive family.
-                     </p>
+        {/* ABOUT NEO COLLAGE SECTION */}
+        <section className="py-24 px-4 md:px-12 bg-white relative z-20">
+            <div className="max-w-7xl mx-auto">
+                <div className="text-center mb-16 reveal-on-scroll">
+                    <span className="text-xs font-bold tracking-widest text-[#0B143F]/60 uppercase mb-4 block">
+                        Our Culture
+                    </span>
+                    <h2 className="text-4xl md:text-5xl font-serif text-[#0B143F] mb-6">
+                        Life at Neo
+                    </h2>
+                    <p className="text-[#0B143F]/70 text-lg leading-relaxed max-w-2xl mx-auto">
+                        We believe that our people are our greatest asset. Here is a glimpse into the collaborative, dynamic, and passionate environment that drives our success.
+                    </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {VALUES.map((value, idx) => (
-                        <div key={idx} className="p-8 border border-zinc-100 bg-zinc-50/50 rounded-sm hover:shadow-lg transition-all duration-300 group">
-                            <div className="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">{value.icon}</div>
-                            <h3 className="text-xl font-serif text-[#0B143F] mb-3">{value.title}</h3>
-                            <p className="text-[#0B143F]/70 text-sm leading-relaxed">
-                                {value.description}
-                            </p>
-                        </div>
-                    ))}
+                {/* Staggered Collage Grid */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[200px]">
+                    {/* Large featured card */}
+                    <div className="col-span-2 row-span-2 bg-zinc-200 rounded-2xl reveal-on-scroll shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden relative group">
+                        <div className="absolute inset-0 bg-zinc-300 md:group-hover:scale-105 transition-transform duration-700"></div>
+                    </div>
+                    
+                    {/* Medium tall card */}
+                    <div className="col-span-1 row-span-2 bg-zinc-200 rounded-2xl reveal-on-scroll shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden relative group">
+                        <div className="absolute inset-0 bg-zinc-300 md:group-hover:scale-105 transition-transform duration-700"></div>
+                    </div>
+                    
+                    {/* Small square card */}
+                    <div className="col-span-1 row-span-1 bg-zinc-200 rounded-2xl reveal-on-scroll shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden relative group">
+                        <div className="absolute inset-0 bg-zinc-300 md:group-hover:scale-105 transition-transform duration-700"></div>
+                    </div>
+                    
+                    {/* Small square card */}
+                    <div className="col-span-1 row-span-1 bg-zinc-200 rounded-2xl reveal-on-scroll shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden relative group">
+                        <div className="absolute inset-0 bg-zinc-300 md:group-hover:scale-105 transition-transform duration-700"></div>
+                    </div>
+                    
+                    {/* Wide landscape card */}
+                    <div className="col-span-2 md:col-span-3 row-span-1 bg-zinc-200 rounded-2xl reveal-on-scroll shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden relative group">
+                        <div className="absolute inset-0 bg-zinc-300 md:group-hover:scale-105 transition-transform duration-700"></div>
+                    </div>
+                    
+                    {/* Small square card */}
+                    <div className="col-span-2 md:col-span-1 row-span-1 bg-zinc-200 rounded-2xl reveal-on-scroll shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden relative group">
+                        <div className="absolute inset-0 bg-zinc-300 md:group-hover:scale-105 transition-transform duration-700"></div>
+                    </div>
                 </div>
-             </div>
+            </div>
         </section>
 
         {/* GENERAL APPLICATION SECTION */}

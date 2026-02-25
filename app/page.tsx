@@ -15,7 +15,7 @@ export default function Home() {
       <ParallaxBackground />
       <div className="max-w-[1440px] mx-auto relative z-10 bg-white shadow-2xl shadow-blue-900/5">
         <HeroSection />
-        <CompanyOverviewSection />
+        {/* <CompanyOverviewSection /> */}
         <BusinessUnitsSection />
 
         <ContactSection />

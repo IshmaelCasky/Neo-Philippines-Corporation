@@ -57,14 +57,14 @@ export default function ContactPage() {
                             <iconify-icon icon="lucide:map-pin" width="20" height="20" />
                         </div>
                         <div>
-                            <h5 className="text-base font-bold text-white mb-2">
-                            Headquarters
+                             <h5 className="text-sm font-bold text-white mb-1">
+                                Location
                             </h5>
-                            <p className="text-white/50 leading-relaxed">
-                            123 Industrial Ave, Davao City
-                            <br />
-                            Mindanao, Philippines 8000
-                            </p>
+                            <p className="text-sm text-white/50">
+                                Purok 3A, Apokon, Tagum City, 8100
+                                <br />
+                                Davao del Norte, Region XI, Philippines
+                </p>
                         </div>
                         </div>
                         
@@ -73,24 +73,14 @@ export default function ContactPage() {
                             <iconify-icon icon="lucide:mail" width="20" height="20" />
                         </div>
                         <div>
-                            <h5 className="text-base font-bold text-white mb-2">General Inquiries</h5>
+                            <h5 className="text-base font-bold text-white mb-2">Email Us</h5>
                             <a href="mailto:info@neophilippines.com" className="text-white/50 hover:text-[#FFE11E] transition-colors">
-                            info@neophilippines.com
+                            NeoPhilippinesCorporation@gmail.com
                             </a>
                         </div>
                         </div>
 
-                         <div className="flex items-start gap-6 text-white/80 group">
-                        <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#FFE11E] group-hover:text-[#0B143F] transition-colors shrink-0 border border-white/10">
-                            <iconify-icon icon="lucide:phone" width="20" height="20" />
-                        </div>
-                        <div>
-                            <h5 className="text-base font-bold text-white mb-2">Phone</h5>
-                            <a href="tel:+63822223333" className="text-white/50 hover:text-[#FFE11E] transition-colors">
-                            +63 (82) 222-3333
-                            </a>
-                        </div>
-                        </div>
+                      
                     </div>
                     </div>
 

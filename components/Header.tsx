@@ -50,28 +50,28 @@ export default function Header() {
       >
         <div className="flex items-center justify-between max-w-7xl mx-auto h-full">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group relative z-50">
+          <Link href="/" className="flex items-center gap-3 group relative z-50 scale-[1.10] md:scale-[1.3] origin-left">
             <Image
               src="/logo.png"
               alt="Neo Philippines Corporation Logo"
-              width={98}
-              height={98}
+              width={160}
+              height={160}
               className={`transition-all duration-300 object-contain ${
-                isScrolled ? "h-10 w-auto" : "h-14 w-auto md:h-16 md:w-auto"
+                isScrolled ? "h-16 w-auto" : "h-20 w-auto md:h-24 md:w-auto"
               }`}
             />
             <div
-              className={`hidden md:flex flex-col justify-center border-l border-[#0B143F]/20 pl-3 h-10 transition-opacity duration-300 ${
+              className={`hidden md:flex flex-col justify-center border-l border-[#0B143F]/20 pl-4 h-16 transition-opacity duration-300 ${
                 isScrolled ? "opacity-0 w-0 overflow-hidden" : "opacity-100"
               }`}
             >
-              <span className="block text-[10px] uppercase tracking-[0.2em] text-[#0B143F] font-bold leading-none">
+              <span className="block text-xs uppercase tracking-[0.2em] text-[#0B143F] font-bold leading-none">
                 Neo
               </span>
-              <span className="block text-[10px] uppercase tracking-[0.2em] text-[#0B143F] font-bold leading-none mt-1">
+              <span className="block text-xs uppercase tracking-[0.2em] text-[#0B143F] font-bold leading-none mt-1">
                 Philippines
               </span>
-              <span className="block text-[8px] uppercase tracking-[0.2em] text-zinc-400 font-medium leading-none mt-1">
+              <span className="block text-[10px] uppercase tracking-[0.2em] text-zinc-400 font-medium leading-none mt-1">
                 Corporation
               </span>
             </div>
