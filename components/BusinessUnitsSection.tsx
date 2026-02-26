@@ -2,13 +2,15 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const BUSINESS_UNITS = [
   {
     name: "Neo Foods",
     category: "Core Division",
     description: "Is the food manufacturing leg of NEO Philippines Corporation, focused on producing safe, high-quality, and market-driven food products. The business emphasizes quality assurance, operational efficiency, and compliance with food safety standards while supporting local suppliers and sustainable economic growth in Mindanao.",
-    image: "https://images.unsplash.com/photo-1598514983318-2f64f8f4796c?q=80&w=2670&auto=format&fit=crop",
+    image: "/neofoods/628011243_1430232555780621_4700577402596293439_n.jpg",
+    href: "/products#neo-foods",
     delay: "0",
     theme: "yellow"
   },
@@ -16,7 +18,8 @@ const BUSINESS_UNITS = [
     name: "Neo Solutions",
     category: "Logistics & Trade",
     description: "Provides reliable and compliant customs brokerage and trade facilitation services. Guided by regulatory expertise and a client-focused approach, the business enables efficient import and export operations while minimizing risks, delays, and logistics costs.",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2670&auto=format&fit=crop",
+    image: "/neosolutions/Gemini_Generated_Image_ecp3vvecp3vvecp3.png",
+    href: "/products#neo-customs",
     delay: "100",
     theme: "white"
   },
@@ -24,7 +27,8 @@ const BUSINESS_UNITS = [
     name: "Neo Merchandise",
     category: "Retail & Trade",
     description: "Handles the sourcing and distribution of a wide range of products for retail and institutional markets. The business prioritizes quality, efficient procurement, and dependable supply chain management to deliver consistent value and support diversified commercial growth.",
-    image: "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=2670&auto=format&fit=crop",
+    image: "/neomerchandise/Gemini_Generated_Image_dp17aedp17aedp17.png",
+    href: "/products#neo-general",
     delay: "200",
     theme: "white"
   }
@@ -82,10 +86,11 @@ export default function BusinessUnitsSection() {
       {/* Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
         {BUSINESS_UNITS.map((unit, index) => (
-          <div 
+          <Link 
+            href={unit.href}
             key={unit.name}
             className={`
-              group relative h-[500px] md:h-[600px] bg-[#0B143F] rounded-2xl overflow-hidden cursor-pointer 
+              group relative block w-full h-[500px] md:h-[600px] bg-[#0B143F] rounded-2xl overflow-hidden cursor-pointer 
               reveal-on-scroll hover:shadow-2xl hover:shadow-[#0B143F]/20 transition-all duration-700
             `}
             style={{ transitionDelay: `${unit.delay}ms` }}
@@ -142,7 +147,7 @@ export default function BusinessUnitsSection() {
 
             {/* Border Glow Effect on Hover */}
             <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#FFE11E]/20 rounded-2xl transition-colors duration-500 pointer-events-none"></div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

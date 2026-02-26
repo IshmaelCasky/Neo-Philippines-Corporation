@@ -99,32 +99,32 @@ export default function CareersPage() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[200px]">
                     {/* Large featured card */}
                     <div className="col-span-2 row-span-2 bg-zinc-200 rounded-2xl reveal-on-scroll shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden relative group">
-                        <div className="absolute inset-0 bg-zinc-300 md:group-hover:scale-105 transition-transform duration-700"></div>
+                        <Image src="/neo/27562766-9731-4c8b-951c-614eeac6a70a.jpeg" alt="Life at Neo" fill className="object-cover md:group-hover:scale-105 transition-transform duration-700" />
                     </div>
                     
                     {/* Medium tall card */}
                     <div className="col-span-1 row-span-2 bg-zinc-200 rounded-2xl reveal-on-scroll shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden relative group">
-                        <div className="absolute inset-0 bg-zinc-300 md:group-hover:scale-105 transition-transform duration-700"></div>
+                        <Image src="/neo/6a76fc54-43a7-44e0-a367-883f4ed25469.jpeg" alt="Life at Neo" fill className="object-cover md:group-hover:scale-105 transition-transform duration-700" />
                     </div>
                     
                     {/* Small square card */}
                     <div className="col-span-1 row-span-1 bg-zinc-200 rounded-2xl reveal-on-scroll shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden relative group">
-                        <div className="absolute inset-0 bg-zinc-300 md:group-hover:scale-105 transition-transform duration-700"></div>
+                        <Image src="/neo/72c5e8d1-561a-4889-bc35-2b1ba30ca9ea.jpeg" alt="Life at Neo" fill className="object-cover md:group-hover:scale-105 transition-transform duration-700" />
                     </div>
                     
                     {/* Small square card */}
                     <div className="col-span-1 row-span-1 bg-zinc-200 rounded-2xl reveal-on-scroll shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden relative group">
-                        <div className="absolute inset-0 bg-zinc-300 md:group-hover:scale-105 transition-transform duration-700"></div>
+                        <Image src="/neo/b8d47d3d-5722-44bb-a4a5-06ad537e42e6.jpeg" alt="Life at Neo" fill className="object-cover md:group-hover:scale-105 transition-transform duration-700" />
                     </div>
                     
                     {/* Wide landscape card */}
                     <div className="col-span-2 md:col-span-3 row-span-1 bg-zinc-200 rounded-2xl reveal-on-scroll shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden relative group">
-                        <div className="absolute inset-0 bg-zinc-300 md:group-hover:scale-105 transition-transform duration-700"></div>
+                        <Image src="/neo/c03dfd8b-45ca-48f1-b9a2-250ae5f0185a.jpeg" alt="Life at Neo" fill className="object-cover md:group-hover:scale-105 transition-transform duration-700" />
                     </div>
                     
                     {/* Small square card */}
                     <div className="col-span-2 md:col-span-1 row-span-1 bg-zinc-200 rounded-2xl reveal-on-scroll shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden relative group">
-                        <div className="absolute inset-0 bg-zinc-300 md:group-hover:scale-105 transition-transform duration-700"></div>
+                        <Image src="/neo/db1fdc04-c496-4d3d-8d28-26d436099c72.jpeg" alt="Life at Neo" fill className="object-cover md:group-hover:scale-105 transition-transform duration-700" />
                     </div>
                 </div>
             </div>

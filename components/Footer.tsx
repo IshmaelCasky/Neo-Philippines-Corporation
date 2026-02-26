@@ -115,7 +115,9 @@ export default function Footer() {
                 <span className="text-xs">Facebook</span>
               </Link>
               <Link
-                href="#"
+                href="https://www.linkedin.com/company/neo-philippines-corporation/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-3 text-zinc-400 hover:text-white transition-colors group"
               >
                 <iconify-icon
@@ -123,16 +125,6 @@ export default function Footer() {
                   className="text-lg group-hover:text-[#FFE11E] transition-colors"
                 />
                 <span className="text-xs">LinkedIn</span>
-              </Link>
-              <Link
-                href="#"
-                className="flex items-center gap-3 text-zinc-400 hover:text-white transition-colors group"
-              >
-                <iconify-icon
-                  icon="lucide:twitter"
-                  className="text-lg group-hover:text-[#FFE11E] transition-colors"
-                />
-                <span className="text-xs">Twitter</span>
               </Link>
             </div>
           </div>
