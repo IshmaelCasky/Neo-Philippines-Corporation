@@ -40,8 +40,8 @@ const BUSINESS_UNITS = [
     images: [
       "/neosolutions/Gemini_Generated_Image_ecp3vvecp3vvecp3.png",
       "/neosolutions/Gemini_Generated_Image_ecp3vvecp3vvecp3 (1).png",
-      "/neosolutions/Gemini_Generated_Image_vcbtv8vcbtv8vcbt.png",
-      "/neosolutions/Gemini_Generated_Image_vcbtv8vcbtv8vcbt (1).png"
+      "/neosolutions/Gemini_Generated_Image_7asy7f7asy7f7asy.png",
+      "/neosolutions/Gemini_Generated_Image_7asy7f7asy7f7asy copy.png"
     ],
     details: [
         "Import & Export Operations",
