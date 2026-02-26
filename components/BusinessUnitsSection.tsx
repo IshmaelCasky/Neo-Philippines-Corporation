@@ -9,7 +9,7 @@ const BUSINESS_UNITS = [
     name: "Neo Foods",
     category: "Core Division",
     description: "Is the food manufacturing leg of NEO Philippines Corporation, focused on producing safe, high-quality, and market-driven food products. The business emphasizes quality assurance, operational efficiency, and compliance with food safety standards while supporting local suppliers and sustainable economic growth in Mindanao.",
-    image: "/neofoods/628011243_1430232555780621_4700577402596293439_n.jpg",
+    image: "/neofoods/641062463_1445156670954876_8433701722556515240_n.jpg",
     href: "/products#neo-foods",
     delay: "0",
     theme: "yellow"
@@ -27,7 +27,7 @@ const BUSINESS_UNITS = [
     name: "Neo Merchandise",
     category: "Retail & Trade",
     description: "Handles the sourcing and distribution of a wide range of products for retail and institutional markets. The business prioritizes quality, efficient procurement, and dependable supply chain management to deliver consistent value and support diversified commercial growth.",
-    image: "/neomerchandise/Gemini_Generated_Image_dp17aedp17aedp17.png",
+    image: "/neomerchandise/e717dc4b-82ba-4469-9f3e-dd988387641d.jpeg",
     href: "/products#neo-general",
     delay: "200",
     theme: "white"

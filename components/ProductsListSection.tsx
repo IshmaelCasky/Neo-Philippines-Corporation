@@ -10,12 +10,17 @@ const BUSINESS_UNITS = [
     name: "Neo Foods",
     category: "Core Division",
     description: "Focused on producing safe, high-quality, and market-driven food products. The business emphasizes quality assurance, operational efficiency, and compliance with food safety standards while supporting local suppliers and sustainable economic growth in Mindanao.",
-    image: "/neofoods/628011243_1430232555780621_4700577402596293439_n.jpg",
+    image: "/neofoods/641062463_1445156670954876_8433701722556515240_n.jpg",
     images: [
-      "/neofoods/628011243_1430232555780621_4700577402596293439_n.jpg",
+      "/neofoods/627143108_1425251079612102_2159817774040676409_n.jpg",
+      "/neofoods/628810496_1433861612084382_124673081441229579_n.jpg",
       "/neofoods/631117237_1434063618730848_2258793262584719228_n.jpg",
       "/neofoods/631170764_1430232525780624_540129197166834614_n.jpg",
       "/neofoods/631649347_1434063442064199_2428965413396850485_n.jpg",
+      "/neofoods/631968683_1433861518751058_249339250437141867_n.jpg",
+      "/neofoods/631999034_1433861525417724_876361251250306492_n.jpg",
+      "/neofoods/632323525_1435868611883682_8914616882562019021_n.jpg",
+      "/neofoods/633704202_1436155745188302_5250831615802197355_n.jpg",
       "/neofoods/641062463_1445156670954876_8433701722556515240_n.jpg",
       "/neofoods/642279333_1445148567622353_8993529413841437908_n.jpg"
     ],
@@ -50,13 +55,12 @@ const BUSINESS_UNITS = [
     name: "Neo Merchandise",
     category: "Retail & Trade",
     description: "Handles the sourcing and distribution of a wide range of products for retail and institutional markets. The business prioritizes quality, efficient procurement, and dependable supply chain management to deliver consistent value and support diversified commercial growth.",
-    image: "/neomerchandise/Gemini_Generated_Image_dp17aedp17aedp17.png",
+    image: "/neomerchandise/e717dc4b-82ba-4469-9f3e-dd988387641d.jpeg",
     images: [
-      "/neomerchandise/Gemini_Generated_Image_dp17aedp17aedp17.png",
-      "/neomerchandise/Gemini_Generated_Image_dp17aedp17aedp17 (1).png",
-      "/neomerchandise/Gemini_Generated_Image_dp17aedp17aedp17 (2).png",
-      "/neomerchandise/Gemini_Generated_Image_dp17aedp17aedp17 (3).png",
-      "/neomerchandise/Gemini_Generated_Image_lpo0l0lpo0l0lpo0.png"
+      "/neomerchandise/e717dc4b-82ba-4469-9f3e-dd988387641d.jpeg",
+      "/neomerchandise/41559654-e468-4ddb-97a0-f12b1b7e0726.jpeg",
+      "/neomerchandise/5be69952-4d40-4ca7-bdd7-e8244d51e6bf.jpeg",
+      "/neomerchandise/7fa9ed61-0aaf-483b-9f02-6d3ff6526394.jpeg"
     ],
     details: [
         "Sourcing & Distribution",
