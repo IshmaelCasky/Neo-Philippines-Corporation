@@ -36,12 +36,12 @@ const BUSINESS_UNITS = [
     name: "Neo Solutions",
     category: "Logistics & Trade",
     description: "Provides reliable and compliant customs brokerage and trade facilitation services. Guided by regulatory expertise and a client-focused approach, the business enables efficient import and export operations while minimizing risks, delays, and logistics costs.",
-    image: "/neosolutions/Gemini_Generated_Image_ecp3vvecp3vvecp3.png",
+    image: "/neosolutions/Gemini_Generated_Image_gxxah0gxxah0gxxa.png",
     images: [
-      "/neosolutions/Gemini_Generated_Image_ecp3vvecp3vvecp3.png",
-      "/neosolutions/Gemini_Generated_Image_ecp3vvecp3vvecp3 (1).png",
-      "/neosolutions/Gemini_Generated_Image_7asy7f7asy7f7asy.png",
-      "/neosolutions/Gemini_Generated_Image_7asy7f7asy7f7asy copy.png"
+      "/neosolutions/Gemini_Generated_Image_gxxah0gxxah0gxxa.png",
+      "/neosolutions/Gemini_Generated_Image_gxxah0gxxah0gxxa copy.png",
+      "/neosolutions/Gemini_Generated_Image_gxxah0gxxah0gxxa copy 2.png",
+      "/neosolutions/Gemini_Generated_Image_gxxah0gxxah0gxxa copy 3.png"
     ],
     details: [
         "Import & Export Operations",
@@ -55,12 +55,12 @@ const BUSINESS_UNITS = [
     name: "Neo Merchandise",
     category: "Retail & Trade",
     description: "Handles the sourcing and distribution of a wide range of products for retail and institutional markets. The business prioritizes quality, efficient procurement, and dependable supply chain management to deliver consistent value and support diversified commercial growth.",
-    image: "/neomerchandise/e717dc4b-82ba-4469-9f3e-dd988387641d.jpeg",
+    image: "/neomerchandise/Gemini_Generated_Image_yj6kh4yj6kh4yj6k.png",
     images: [
-      "/neomerchandise/e717dc4b-82ba-4469-9f3e-dd988387641d.jpeg",
-      "/neomerchandise/41559654-e468-4ddb-97a0-f12b1b7e0726.jpeg",
-      "/neomerchandise/5be69952-4d40-4ca7-bdd7-e8244d51e6bf.jpeg",
-      "/neomerchandise/7fa9ed61-0aaf-483b-9f02-6d3ff6526394.jpeg"
+      "/neomerchandise/Gemini_Generated_Image_yj6kh4yj6kh4yj6k.png",
+      "/neomerchandise/Gemini_Generated_Image_yj6kh4yj6kh4yj6k copy.png",
+      "/neomerchandise/Gemini_Generated_Image_yj6kh4yj6kh4yj6k copy 2.png",
+      "/neomerchandise/Gemini_Generated_Image_yj6kh4yj6kh4yj6k copy 3.png"
     ],
     details: [
         "Sourcing & Distribution",
