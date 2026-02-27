@@ -18,7 +18,7 @@ const BUSINESS_UNITS = [
     name: "Neo Solutions",
     category: "Logistics & Trade",
     description: "Provides reliable and compliant customs brokerage and trade facilitation services. Guided by regulatory expertise and a client-focused approach, the business enables efficient import and export operations while minimizing risks, delays, and logistics costs.",
-    image: "/neosolutions/Gemini_Generated_Image_ecp3vvecp3vvecp3.png",
+    image: "/neosolutions/Gemini_Generated_Image_gxxah0gxxah0gxxa.png",
     href: "/products#neo-customs",
     delay: "100",
     theme: "white"
@@ -27,7 +27,7 @@ const BUSINESS_UNITS = [
     name: "Neo Merchandise",
     category: "Retail & Trade",
     description: "Handles the sourcing and distribution of a wide range of products for retail and institutional markets. The business prioritizes quality, efficient procurement, and dependable supply chain management to deliver consistent value and support diversified commercial growth.",
-    image: "/neomerchandise/e717dc4b-82ba-4469-9f3e-dd988387641d.jpeg",
+    image: "/neomerchandise/Gemini_Generated_Image_yj6kh4yj6kh4yj6k.png",
     href: "/products#neo-general",
     delay: "200",
     theme: "white"
