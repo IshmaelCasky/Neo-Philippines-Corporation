@@ -61,9 +61,9 @@ export default function ContactPage() {
                                 Location
                             </h5>
                             <p className="text-sm text-white/50">
-                                Purok 3A, Apokon, Tagum City, 8100
+                                Purok 3A, Apokon, Tagum City
                                 <br />
-                                Davao del Norte, Region XI, Philippines
+                                Davao del Norte, Region XI, Philippines, 8100
                 </p>
                         </div>
                         </div>

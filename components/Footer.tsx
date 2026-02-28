@@ -44,9 +44,9 @@ export default function Footer() {
               </div>
             </Link>
 
-            <p className="text-zinc-400 text-sm leading-relaxed max-w-sm">
+            {/* <p className="text-zinc-400 text-sm leading-relaxed max-w-sm">
               Delivering quality services in food manufacturing, custom solutions, and general merchandise. Committed to Mindanao&apos;s sustainable growth through innovation and integrity.
-            </p>
+            </p> */}
           </div>
 
           {/* Sitemap */}

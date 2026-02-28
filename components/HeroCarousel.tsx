@@ -5,15 +5,15 @@ import Image from "next/image";
 
 const slides = [
   {
-    src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2670&auto=format&fit=crop",
+    src: "/herocarousel/Gemini_Generated_Image_4p21vc4p21vc4p21.png",
     alt: "Manufacturing",
   },
   {
-    src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2670&auto=format&fit=crop",
+    src: "/herocarousel/Gemini_Generated_Image_oteyk0oteyk0otey.png",
     alt: "Logistics",
   },
   {
-    src: "https://images.unsplash.com/photo-1664575602276-acd073f104c1?q=80&w=2670&auto=format&fit=crop",
+    src: "/herocarousel/Gemini_Generated_Image_t7zbsqt7zbsqt7zb.png",
     alt: "Merchandise",
   },
 ];

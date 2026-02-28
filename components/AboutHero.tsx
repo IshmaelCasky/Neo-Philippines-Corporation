@@ -34,12 +34,12 @@ export default function AboutHero() {
         <span className="inline-block px-4 py-1.5 rounded-full border border-[#FFE11E]/30 bg-[#FFE11E]/10 backdrop-blur-sm text-[#FFE11E] text-xs font-bold tracking-[0.3em] uppercase mb-8 shadow-lg shadow-[#FFE11E]/5 animate-fade-in-up">
             About Us
         </span>
-        <h1 
+        {/* <h1 
             ref={titleRef}
             className="text-6xl md:text-7xl lg:text-8xl font-serif text-white mb-8 leading-[0.9] tracking-tight drop-shadow-2xl"
         >
           The <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-white/80">Company</span>
-        </h1>
+        </h1> */}
         <div className="text-blue-100/90 text-sm md:text-lg lg:text-lg max-w-6xl mx-auto font-light leading-relaxed animate-fade-in-up delay-200 space-y-4 text-justify md:text-center">
           <p>
             NEO Philippines Corporation is a diversified company based in Davao, Philippines, with business interests in Customs Brokerage, Food Manufacturing, and General Merchandise. Founded by young and empowered visionaries, NEO embodies a deep commitment to uplifting lives through inclusive growth and shared opportunities.
