@@ -72,7 +72,7 @@ export default function CareersPage() {
                     Join Our Team
                 </span> */}
                 <h1 className="text-5xl md:text-7xl font-serif text-white mb-6 reveal-on-scroll leading-tight">
-                    Be Part of Neo Philippines Corporation<br></br>Build the Future With Us
+                   Build a Sustainable Future with Us
                 </h1>
                 <p className="text-zinc-200 text-lg md:text-xl font-light max-w-2xl mx-auto reveal-on-scroll delay-100">
                     Be part of a dynamic organization driven by excellence, innovation, and a commitment to sustainable growth.

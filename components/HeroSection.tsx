@@ -51,7 +51,7 @@ export default function HeroSection() {
 
           {/* Description */}
           <p className="text-zinc-500 text-base md:text-xl max-w-md mb-8 md:mb-12 leading-relaxed reveal-on-scroll delay-300">
-            A diversified company based in Davao, Philippines, with business interests in food manufacturing, custom solutions, and general merchandise. 
+            A diversified company based in Davao, Philippines, with business interests in food manufacturing, custom brokerage solutions, and general merchandise. 
           </p>
 
           {/* CTAs */}
