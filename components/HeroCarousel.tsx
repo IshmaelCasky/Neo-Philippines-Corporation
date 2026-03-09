@@ -9,7 +9,7 @@ const slides = [
     alt: "Manufacturing",
   },
   {
-    src: "/herocarousel/Gemini_Generated_Image_oteyk0oteyk0otey.png",
+    src: "/herocarousel/52e60033-9e2e-4c9b-acf9-4568f8990569.jpeg",
     alt: "Logistics",
   },
   {

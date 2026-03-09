@@ -39,7 +39,7 @@ export default function HeroSection() {
             </span>
             
             <span className="reveal-text ml-5 pr-4">
-              <span className="delay-100 w-[100%] font-serif italic text-[#0B143F]">
+              <span className="delay-100 w-[100%] font-serif text-[#0B143F]">
                 Philippines
               </span>
             </span>
