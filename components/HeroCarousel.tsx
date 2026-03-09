@@ -13,7 +13,7 @@ const slides = [
     alt: "Logistics",
   },
   {
-    src: "/herocarousel/Gemini_Generated_Image_t7zbsqt7zbsqt7zb.png",
+    src: "/herocarousel/f70c6ada-6a78-4fec-886d-1af61b67b6fc.png",
     alt: "Merchandise",
   },
 ];
