@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const slides = [
   {
-    src: "/herocarousel/Gemini_Generated_Image_4p21vc4p21vc4p21.png",
+    src: "/herocarousel/9838631a-0954-4894-9f60-34c9bc0ca27e.jpeg",
     alt: "Manufacturing",
   },
   {
