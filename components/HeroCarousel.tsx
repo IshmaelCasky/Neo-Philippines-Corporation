@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const slides = [
   {
-    src: "/herocarousel/9838631a-0954-4894-9f60-34c9bc0ca27e.jpeg",
+    src: "/herocarousel/1311b544-eb32-48f6-87dc-6d094529a127.jpeg",
     alt: "Manufacturing",
   },
   {
@@ -13,8 +13,12 @@ const slides = [
     alt: "Logistics",
   },
   {
-    src: "/herocarousel/f70c6ada-6a78-4fec-886d-1af61b67b6fc.jpeg",
+    src: "/herocarousel/7c80fe38-3863-42ac-9c91-326737ed4acb.jpeg",
     alt: "Merchandise",
+  },
+  {
+    src: "/herocarousel/524819d0-6b47-4c49-9d5c-fe59c61b5a0d.jpeg",
+    alt: "Brokerage",
   },
 ];
 
