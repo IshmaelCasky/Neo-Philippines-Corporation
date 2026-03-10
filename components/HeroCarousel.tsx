@@ -47,7 +47,7 @@ export default function HeroCarousel() {
             src={slide.src}
             alt={slide.alt}
             fill
-            className="object-cover"
+            className="object-cover grayscale"
             priority={index === 0}
           />
         </div>
